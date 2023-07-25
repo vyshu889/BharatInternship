@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+</style>
+</head>
+<body bgcolor="skyblue">
+
+<div class="center">
+  <form>
+    <h2>Temperature Converter</h2>
+    <label for="celsius">Celsius:</label>
+    <input type="number" id="celsius" name="celsius" placeholder="Enter temperature in Celsius">
+    <br><br>
+    <label for="fahrenheit">Fahrenheit:</label>
+    <input type="number" id="fahrenheit" name="fahrenheit" placeholder="Fahrenheit" readonly>
+    <br><br>
+    <label for="kelvin">Kelvin:</label>
+    <input type="number" id="kelvin" name="kelvin" placeholder="Kelvin" readonly>
+    <br><br>
+    <button type="button" onclick="convertTemp()">Convert</button>
+  </form> 
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
